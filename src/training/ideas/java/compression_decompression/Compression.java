@@ -24,9 +24,10 @@ public class Compression {
         }
         return sb.toString();
     }
+
     public static String decompression(String str){
         StringBuilder sb = new StringBuilder();
-        int temp = 0 , cnt = 0,cntplace = 1;boolean flag = false;
+        int temp1 = 0,temp = 0 , cnt = 0,cntplace = 1;boolean flag = false;
         for (int i = 0; i < str.length() ; i++) {
 
             if( isDigit(str.charAt(i))){
