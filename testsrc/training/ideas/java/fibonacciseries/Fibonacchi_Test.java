@@ -32,4 +32,10 @@ public class Fibonacchi_Test {
         int [] expected_Fib_Series={0,1,1,2,3,5,8,13,21,34,55};
         Assert.assertArrayEquals(expected_Fib_Series,Fibonacchi.calculateFibSeries(input));
     }
+    @Test
+    public void given_number_as_12_I_Should_get_Fibonacci_Series_as_expected(){
+        int input = 11;
+        int [] expected_Fib_Series={0,1,1,2,3,5,8,13,21,34,55};
+        Assert.assertArrayEquals(expected_Fib_Series,Fibonacchi.calculateFibSeries(input));
+    }
 }
