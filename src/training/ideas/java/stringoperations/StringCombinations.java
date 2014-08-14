@@ -3,7 +3,7 @@ package training.ideas.java.stringoperations;
 /**
  * Created by idngeb on 2014-08-13.
  */
-public class StringOperationsDo {
+public class StringCombinations {
     public static String[] find(String input) {
         String strArr[] = new String[input.length()];
         if(input.length()==0){
