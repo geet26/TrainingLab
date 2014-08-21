@@ -1,4 +1,4 @@
-package training.ideas.java.stringoperations;
+package training.ideas.java.stringmanupulations;
 
 import org.junit.Assert;
 import org.junit.Test;

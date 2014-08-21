@@ -1,4 +1,4 @@
-package training.ideas.java.stringoperations;
+package training.ideas.java.stringmanupulations;
 
 /**
  * Created by idngeb on 2014-08-13.

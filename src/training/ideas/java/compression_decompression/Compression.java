@@ -6,20 +6,20 @@ import static java.lang.Character.isDigit;
  * Created by idngeb on 2014-08-09.
  */
 public class Compression {
-    public static String compression(String str ){
+    public static String compression(String input_str){
         StringBuilder sb = new StringBuilder();
         int cnt = 1;
-        for (int index = 0; index <str.length() ; index++) {
-            if(index +1 < str.length() && str.charAt(index) == str.charAt(index +1)){
+        for (int index = 0; index < input_str.length() ; index++) {
+            if(index +1 < input_str.length() && input_str.charAt(index) == input_str.charAt(index +1)){
                 cnt++;
                 continue;
             }
             if(cnt >  1){
-                sb.append(str.charAt(index -1)).append(cnt);
+                sb.append(input_str.charAt(index -1)).append(cnt);
                 cnt = 1;
             }
             else{
-                sb.append(str.charAt(index));
+                sb.append(input_str.charAt(index));
             }
         }
         return sb.toString();
@@ -59,4 +59,7 @@ public class Compression {
         }
         return sb.toString();
     }
+
+
+
 }

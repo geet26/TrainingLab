@@ -19,6 +19,11 @@ public class CompressionTest {
         Assert.assertEquals("GB4XYZ3X2BN3",Compression.compression(str));
     }
     @Test
+    public void  given_a_String_Not_Starting_With_no_find_compression_test(){
+        String str = "AAABBC";
+        Assert.assertEquals("A3B2C",Compression.compression(str));
+    }
+    @Test
     public void  given_a_EmptyString_find_decompression(){
         String str = "A11BC2F";
         Assert.assertEquals("AAAAAAAAAAABCCF",Compression.decompression(str));

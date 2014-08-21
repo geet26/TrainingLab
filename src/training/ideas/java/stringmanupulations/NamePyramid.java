@@ -5,7 +5,7 @@ package training.ideas.java.stringmanupulations;
  */
 public class NamePyramid {
         public static void name_pyramid(){
-            String name = "Geetanjali";
+            String name = "IDEAS";
             String  namrarr = "";
             String result="";
             String space = "";
@@ -17,7 +17,7 @@ public class NamePyramid {
                 for (int j =namelength-1; j >i ; j--) {
                     space +=" ";
                 }
-                for(int x=1;x<=5;x++)
+                for(int x=1;x<=15;x++)
                     System.out.print(space + result + space);
                System.out.print("\n");
             }
@@ -28,7 +28,7 @@ public class NamePyramid {
                 for (int j = 0; j <= i ; j++) {
                     space +=" ";
                 }
-                for(int x=1;x<=5;x++)
+                for(int x=1;x<=15;x++)
                     System.out.print(space + name + space);
               System.out.print("\n");
             }
