@@ -1,9 +1,9 @@
-package training.ideas.java.characteroperations;
+package training.ideas.java.charactermanipulations;
 
 /**
  * Created by idngeb on 2014-08-14.
  */
-public class Character_Concatenation {
+public class Concatenation {
     public static char[] concat(final char[] input1, final char[] input2) {
        char[] output = new char[input1.length+input2.length];
        int cnt1 = 0, cnt2 = 0;

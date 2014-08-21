@@ -1,4 +1,4 @@
-package training.ideas.java.characteroperations;
+package training.ideas.java.charactermanipulations;
 
 /**
  * Created by idngeb on 2014-08-15.
