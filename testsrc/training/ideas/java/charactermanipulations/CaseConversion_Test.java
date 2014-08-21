@@ -1,4 +1,4 @@
-package training.ideas.java.characteroperations;
+package training.ideas.java.charactermanipulations;
 
 import org.junit.Assert;
 import org.junit.Test;
