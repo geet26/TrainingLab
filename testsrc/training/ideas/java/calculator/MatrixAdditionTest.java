@@ -15,6 +15,13 @@ public class MatrixAdditionTest {
         Assert.assertArrayEquals(output,MatrixAddition.add(matrix1,matrix2));
     }
     @Test
+    public void given_2_matrix_of_3_into_2_add_it() {
+        int[][] matrix1 = {{1, 2,3}, {1, 2,3}};
+        int[][] matrix2 = {{1, 2,3}, {1, 2,3}};
+        int[][] output = {{2, 4,6}, {2, 4,6}};
+        Assert.assertArrayEquals(output,MatrixAddition.add(matrix1,matrix2));
+    }
+    @Test
     public void given_2_matrix_of_4_into_3_add_it() {
         int[][] matrix1 = {{1, 2,3}, {5, 2,8},{-1,-5,-9},{0,5,9}};
         int[][] matrix2 = {{1, 2,8}, {-1, -9,-5},{-8,5,-9},{0,0,0}};
@@ -25,9 +32,8 @@ public class MatrixAdditionTest {
     public void given_2_matrix_of_4_into_3_and_2_into_0_add_it() {
         int[][] matrix1 = {{1, 2,3}, {5, 2,8},{-1,-5,-9},{0,5,9}};
         int[][] matrix2 = {{1}, {-1}};
-        int[][] output = {};
+        int[][] output = {{0, 0,0}, {0, 0,0},{0,0,0},{0,0,0}};
         Assert.assertArrayEquals(output,MatrixAddition.add(matrix1,matrix2));
     }
-
 
 }

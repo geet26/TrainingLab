@@ -8,7 +8,7 @@ import org.junit.Test;
  */
 public class TransposeMatrixTest {
     @Test
-    public void given_a_matrix_transpose_it(){
+     public void given_a_matrix_transpose_it(){
         int [] [] input = {{1,2,3},{5,6,9}};
         int [] [] output={{1,5},{2,6},{3,9}};
         Assert.assertArrayEquals(output,TransposeMatrix.transpose(input));
