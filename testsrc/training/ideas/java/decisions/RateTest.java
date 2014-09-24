@@ -3,6 +3,8 @@ package training.ideas.java.decisions;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.io.IOException;
+import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -56,6 +58,9 @@ public class RateTest {
         expected_seasonList.add(new Season(df.parse("11-Sep-2014"),df.parse("12-Sep-2014"),180.00));
         return expected_seasonList;
     }
+    private boolean compareSeason(Season season, Season newSeason) {
+        return (season.startDate.equals(newSeason.startDate) && season.endDate.equals(newSeason.endDate) && season.getRateValue().equals(newSeason.getRateValue()));
+    }
 
     @Test(expected = OverlappingSeasonException.class)
     public void test_add_a_season_which_is_within_a_list() throws ParseException, OverlappingSeasonException {
@@ -71,9 +76,7 @@ public class RateTest {
     }
 
 
-    private boolean compareSeason(Season season, Season newSeason) {
-      return (season.startDate.equals(newSeason.startDate) && season.endDate.equals(newSeason.endDate) && season.getRateValue().equals(newSeason.getRateValue()));
-    }
+
 
 
 
